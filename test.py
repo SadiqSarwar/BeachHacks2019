@@ -4,12 +4,12 @@ from google.cloud import translate
 
 app = Flask(__name__)
 
-@app.route('/')
-def homepage():
+@app.route('/reviewpage')
+def registration():
     # Return a Jinja2 HTML template and pass in image_entities as a parameter.
     return render_template('reviewpage.html')
 
-@app.route('/run_translate', methods=['GET', 'POST'])
+@app.route('/reviewpage', methods=['GET', 'POST'])
 def run_translate():
     # Create a Cloud Translate client.
     client = translate.Client()
