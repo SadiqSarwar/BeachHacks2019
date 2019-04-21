@@ -123,6 +123,12 @@
     </div>
     <input class="btn btn-primary" type="submit" value="Submit" name="submit">
 </form>
+    {% for key, value in result.items() %}
+        <tr>
+            <p><b>Input Text:</b> {{ input_text|safe }}</p>
+             <p><b>French Translation:</b> {{ translated_text_french|safe }} </p>
+        </tr>
+    {% endfor %}
     </div>
 <!--- end of REVIEW --->    
     
