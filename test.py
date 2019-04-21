@@ -4,7 +4,7 @@ from google.cloud import translate
 
 app = Flask(__name__)
 
-@app.route('/reviewpage', methods=['GET', 'POST'])
+@app.route('/run_translate', methods=['GET', 'POST'])
 def run_translate():
     # Create a Cloud Translate client.
     client = translate.Client()
