@@ -1,8 +1,5 @@
 <!DOCTYPE html>
 
-import * as firebase from 'firebase';
-import 'firebase/firestore';
-
 <html>
     <head>
         <title>Firebase Web Quickstart</title>
@@ -29,12 +26,14 @@ import 'firebase/firestore';
         
         <script type="module">
             // Firebase App (the core Firebase SDK) is always required and must be listed first
-            import * as firebase from 'firebase';
-            import 'firebase/firestore';
-
+            import firebase from '/node_modules/@firebase/app';
+            import '/node_modules/@firebase/firestore';
+            import '/node_modules/@firebase/<package>'
+            import '/node_modules/@firebase/app';
+            
             // Add the Firebase products that you want to use
-            import "firebase/auth";
-            import "firebase/database"; 
+            import "/node_modules/@firebase/auth";
+            import "/node_modules/@firebase/database"; 
             
             // Initialize Firebase
             var firebaseConfig = {
@@ -48,7 +47,12 @@ import 'firebase/firestore';
             firebase.initializeApp(firebaseConfig);
             const db = firebase.firestore();
             db.settings({ timestampsInSnapshots: true });
+            export default firebase;
+            export {
+                db,
+            };
         </script>
+        
         <script src="app.js"></script>
         <h1>Google Firestore Demo</h1>
     </body>
