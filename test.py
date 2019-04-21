@@ -7,7 +7,7 @@ app = Flask(__name__)
 @app.route('/')
 def homepage():
     # Return a Jinja2 HTML template and pass in image_entities as a parameter.
-    return render_template('index.html')
+    return render_template('reviewpage.html')
 
 @app.route('/run_translate', methods=['GET', 'POST'])
 def run_translate():
@@ -26,7 +26,7 @@ def run_translate():
     translate_response_french = client.translate(form_text, target_language='fr')
     translated_text_french = translate_response_french.get('translatedText')
 
-    return render_template('homepage.html', input_text=input_text, language=language, translated_text_french=translated_text_french
+    return render_template('reviewpage.html', input_text=input_text, language=language, translated_text_french=translated_text_french
 
 if __name__ == '__main__':
     # This is used when running locally. Gunicorn is used to run the
