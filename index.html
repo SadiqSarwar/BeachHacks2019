@@ -16,7 +16,7 @@
     
     /* Add a gray background color and some padding to the footer */
     footer {
-      background-color: #f2f2f2;
+      background-color: #333;
       padding: 25px;
     }
     
@@ -27,10 +27,15 @@
   }
 
   /* Hide the carousel text when the screen is less than 600 pixels wide */
-  @media (max-width: 600px) {
+  @media (max-width: 9999999px) {
     .carousel-caption {
       display: none; 
-    }
+      }
+  
+  body {
+  background-color:#333;
+  background-repeat: repeat;
+  }
   }
   </style>
 </head>
@@ -102,26 +107,18 @@
 </div>
   
 <div class="container text-center">    
-  <h3>What We Do</h3><br>
-  <div class="row">
-    <div class="col-sm-4">
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-      <p>Current Project</p>
-    </div>
-
-    <div class="col-sm-4">
-      <div class="well">
-       <p>StudySearch is a platform to satisfy the hunger of learning in all of us.</p>
-      </div>
-      <div class="well">
-       <p>StudySearch create</p>
+    <br><br>
+    <div class="row">
+    <div class="col-sm-0">
+      <div style="background-color: #333" class="well">
+       <p style="font-size: 2em; color:white">StudySearch is a platform to satisfy the hunger of learning in all of us.</p>
       </div>
     </div>
   </div>
 </div><br>
 
 <footer class="container-fluid text-center">
-  <p>Created at Beachhacks 2019.</p>
+  <p style="color:white">Created at Beachhacks 2019.</p>
 </footer>
 
 </body>
