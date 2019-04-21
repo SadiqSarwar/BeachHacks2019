@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    
+<!--- STYLE CSS HERE --->
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+    
+  .carousel-inner img {
+      width: 100%; /* Set width to 100% */
+      margin: auto;
+      min-height:200px;
+  }
+
+  /* Hide the carousel text when the screen is less than 600 pixels wide */
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; 
+    }
+  }
+  </style>
+<!--- end of STYLE CSS HERE --->
+    
+</head>
+<html>
+<body>
+    
+<!--- MENU BAR --->
+    <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+        </button>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Subjects</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!--- end of MENU BAR --->
+    
+    <h1 align="middle">Calculus 10e by Ron Larson</h1>
+    
+<!--- THUMBNAIL --->
+    <img style="height: 20em; margin-left: 38em" src="calculustextbookreview.jpg" alt="..."  class="rounded mx-auto d-block">
+<!--- end of THUMBNAIL --->
+    <div style="text-align: justify; margin: 4em">
+        <h2> Description:</h2>
+        <p>
+    The Larson CALCULUS program has a long history of innovation in the calculus market. It has been widely praised by a generation of students and professors for its solid and effective pedagogy that addresses the needs of a broad range of teaching and learning styles and environments. Each title is just one component in a comprehensive calculus course program that carefully integrates and coordinates print, media, and technology products for successful teaching and learning.
+        </p>
+        ISBN-13: 978-1285057095 <br>
+        ISBN-10: 1285057090
+    </div>
+    <!--- Pricing --->
+    <div style="margin: 4em">
+    <h2> Pricing:</h2>
+    <p>
+        <a href="https://www.amazon.com/Calculus-Ron-Larson-ebook/dp/B00B7KKTVM">
+        <img style="width:12em" src="amazonbutton.png">
+        </a>
+        <br>
+        Purchase for $104.49
+        <br>
+        Rent for $29.71
+        <br>
+    </p>
+    
+    
+    
+    </div>
+    
+<!--- REVIEW --->
+    <div style="margin: 4em">
+    <h2> Reviews:</h2>
+    <form>
+   <div class="form-group">
+    <label style="margin-left: 5px" for="exampleFormControlTextarea1">NAME:</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+  </div>
+        
+<!--- Review STARS --->
+    <label style="margin-left: 5px; margin-right: 5px"> RATING:</label>
+    <div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+  <label class="form-check-label" for="inlineRadio1">1</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+  <label class="form-check-label" for="inlineRadio2">2</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+  <label class="form-check-label" for="inlineRadio3">3</label>
+</div>
+        <div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4">
+  <label class="form-check-label" for="inlineRadio4">4</label>
+</div>
+        <div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio5" value="option5">
+  <label class="form-check-label" for="inlineRadio5">5</label>
+</div>
+        
+        
+  <div class="form-group">
+    <label style="margin-left: 5px" for="exampleFormControlSelect2">SELECT UP TO 3 TAGS THAT BEST DESCRIBE THIS RESOURCE:</label>
+    <select multiple class="form-control" id="exampleFormControlSelect2">
+      <option>Rigorous</option>
+      <option>Easy Read</option>
+      <option>Lengthy</option>
+      <option>Great Practice Problems</option>
+      <option>Beachhacks</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label style="margin-left: 5px" for="exampleFormControlTextarea1">HERE'S YOUR CHANCE TO BE MORE SPECIFIC:</label>
+    <textarea name="review" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div>
+    <input class="btn btn-primary" type="submit" value="Submit">
+</form>
+    </div>
+<!--- end of REVIEW --->    
+    
+    </body>
+</html>

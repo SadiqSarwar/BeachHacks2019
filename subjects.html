@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+    
+  .carousel-inner img {
+      width: 100%; /* Set width to 100% */
+      margin: auto;
+      min-height:200px;
+  }
+
+  /* Hide the carousel text when the screen is less than 600 pixels wide */
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; 
+    }
+  }
+  </style>
+</head>
+    
+    
+<body>
+<!--- MENU BAR --->
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">Home</a></li>
+        <li class="active"><a href="#">Subjects</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!--- END OF MENU BAR --->
+<h1 style="text-align: center; margin-top: 2em">Most Popular Subjects</h1>
+<ul>
+<!--- MAIN SUBJECT 1 --->
+     <img style="width: 20em; height: 16em; margin-left: 11em; margin-top: 3em" src="engineeringthumbnail.jpg">
+<!--- end of MAIN SUBJECT 1 --->
+<!--- MAIN SUBJECT 2 --->
+    <a href="reviewpage.html">
+     <img style="width: 20em; height: 16em; margin-left: 3em; margin-top: 3em" src="maththumbnail.jpg">
+    </a>
+<!--- end of MAIN SUBJECT 2 --->
+<!--- MAIN SUBJECT 3 --->
+     <img style="width: 20em; height: 16em; margin-left: 3em; margin-top: 3em" src="physicsthumbnail.jpg">
+<!--- end of MAIN SUBJECT 3 --->
+<hr style="margin-right: 3em">
+    
+</ul>
+<!--- rest of subjects --->
+<h1 style="text-align: center; margin-top: 2em">All Subjects</h1>
+<ul style="margin-left: 14em">
+    <li>Alchemy</li>
+    <li>Architecture</li>
+    <li>Art &amp; Culture</li>
+    <li> Biology &amp; Life Science</li>
+    <li> Business Management</li>
+    <li>Chemistry</li>
+    <li>Communication</li>
+    <li>Computer Science</li>
+    <li>Data Science</li>
+    <li>Economics</li>
+    <li>Engineering</li>
+    <li>Magic</li>
+    <li>Math</li>
+    <li>Physics</li>
+</ul>
+    
+</body>
+</html>
