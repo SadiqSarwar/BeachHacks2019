@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 
+import * as firebase from 'firebase';
+import 'firebase/firestore';
+
 <html>
     <head>
         <title>Firebase Web Quickstart</title>
@@ -7,11 +10,12 @@
         <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
         
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-        
+        <!--
         <link rel = "stylesheet" type = "text/css" href = "index.css">
+        -->
         
          <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase-app.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase-store.js"></script>
+<!--        <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase-store.js"></script>-->
     </head>
     <body>
         <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
@@ -20,23 +24,30 @@
         <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase-app.js"></script>
 
         <!-- Add Firebase products that you want to use -->
-        <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase-auth.js">   </script>
+        <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase-auth.js"></script>
         <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase-database.js"></script>
-
         
-        <script>
+        <script type="module">
+            // Firebase App (the core Firebase SDK) is always required and must be listed first
+            import * as firebase from 'firebase';
+            import 'firebase/firestore';
+
+            // Add the Firebase products that you want to use
+            import "firebase/auth";
+            import "firebase/database"; 
+            
             // Initialize Firebase
-            var config = {
-            apiKey: "AIzaSyB_VJZXdl66xqNozYW5uK4GOr85RvT-oXE",
-            authDomain: "firestore-practice-1268f.firebaseapp.com",
-            databaseURL: "https://firestore-practice-1268f.firebaseio.com",
+            var firebaseConfig = {
+                apiKey: "AIzaSyB_VJZXdl66xqNozYW5uK4GOr85RvT-oXE",
+                authDomain: "firestore-practice-1268f.firebaseapp.com",
+                databaseURL: "https://firestore-practice-1268f.firebaseio.com",
                 projectId: "firestore-practice-1268f",
                 storageBucket: "firestore-practice-1268f.appspot.com",
                 messagingSenderId: "83104870470"
             };
-            firebase.initializeApp(config);
+            firebase.initializeApp(firebaseConfig);
             const db = firebase.firestore();
-            db.settings({ timestampInSnapshots: true });
+            db.settings({ timestampsInSnapshots: true });
         </script>
         <script src="app.js"></script>
         <h1>Google Firestore Demo</h1>

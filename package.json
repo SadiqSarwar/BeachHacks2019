@@ -1,0 +1,22 @@
+{
+  "name": "beachhacks2019",
+  "version": "1.0.0",
+  "description": "CSULB Hackathon 2019",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SadiqSarwar/BeachHacks2019.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SadiqSarwar/BeachHacks2019/issues"
+  },
+  "homepage": "https://github.com/SadiqSarwar/BeachHacks2019#readme",
+  "dependencies": {
+    "firebase": "^5.10.0"
+  }
+}
