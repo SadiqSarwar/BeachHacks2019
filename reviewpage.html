@@ -75,7 +75,7 @@
     
 <!--- REVIEW --->
     <div style="margin-left: 5px">
-    <form>
+    <form action = "run_translate" method = "POST" enctype = "multipart/form-data">
    <div class="form-group">
     <label style="margin-left: 5px" for="exampleFormControlTextarea1">NAME:</label>
     <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
@@ -104,7 +104,7 @@
   <label class="form-check-label" for="inlineRadio5">5</label>
 </div>
         
-        
+
   <div class="form-group">
     <label style="margin-left: 5px" for="exampleFormControlSelect2">SELECT UP TO 3 TAGS THAT BEST DESCRIBE THIS RESOURCE:</label>
     <select multiple class="form-control" id="exampleFormControlSelect2">
@@ -117,10 +117,17 @@
   </div>
   <div class="form-group">
     <label style="margin-left: 5px" for="exampleFormControlTextarea1">HERE'S YOUR CHANCE TO BE MORE SPECIFIC:</label>
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="review"></textarea>
     </div>
     <input class="btn btn-primary" type="submit" value="Submit">
 </form>
+    <p><b>Input Text:</b> {{ input_text|safe }}</p>
+        <p><b>Language:</b> {{ language }}</p>
+      <br>
+      <h2>Translated Text:</h2>
+        <p><b>French Translation:</b> {{ translated_text_french|safe }} </p>
+        <p><b>Chinese Translation:</b> {{ translated_text_chinese|safe }} </p>
     </div>
 <!--- end of REVIEW --->    
     
